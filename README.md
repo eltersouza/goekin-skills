@@ -32,12 +32,12 @@ Este README é o índice do repositório. Cada skill tem uma linha, com o que el
 
 | Skill | O que faz | Status | Issue |
 |---|---|---|---|
-| Planejar a implementação | Lê uma issue e o código e registra na issue o plano de implementação. | planejada | [GOE-273](https://goekin-stg.eas-lab.com.br/goekin/issue/GOE-273) |
-| Quebrar épico ou projeto | Divide um épico ou projeto em issues, sub-issues e milestones. | planejada | [GOE-277](https://goekin-stg.eas-lab.com.br/goekin/issue/GOE-277) |
+| [goekin-plan-issue](skills/goekin-plan-issue/SKILL.md) | Transforma uma issue rasa numa issue pronta para implementar: lê a issue e o código e escreve na descrição contexto, abordagem, arquivos, critérios de aceite, testes, riscos e perguntas, preservando o pedido original. Não muda o status. | em desenvolvimento | [GOE-273](https://goekin-stg.eas-lab.com.br/goekin/issue/GOE-273) |
+| [goekin-breakdown](skills/goekin-breakdown/SKILL.md) | Quebra um épico ou projeto em milestones e issues de 1 a 5 pontos, com dependências e caminho crítico. Mostra a proposta e só cria com o ok, tudo em Backlog. | em desenvolvimento | [GOE-277](https://goekin-stg.eas-lab.com.br/goekin/issue/GOE-277) |
 | Estimativa de issues | Sugere a estimativa de cada issue, com a justificativa. | planejada | [GOE-278](https://goekin-stg.eas-lab.com.br/goekin/issue/GOE-278) |
 | Refinamento e priorização | Revisa o backlog, completa o que falta nas issues e propõe a ordem. | planejada | [GOE-279](https://goekin-stg.eas-lab.com.br/goekin/issue/GOE-279) |
 | Higiene do backlog | Encontra duplicatas, issues paradas e órfãs. | planejada | [GOE-280](https://goekin-stg.eas-lab.com.br/goekin/issue/GOE-280) |
-| Planejamento do ciclo | Monta a sprint pela capacidade do time. | planejada | [GOE-281](https://goekin-stg.eas-lab.com.br/goekin/issue/GOE-281) |
+| [goekin-plan-cycle](skills/goekin-plan-cycle/SKILL.md) | Propõe o próximo ciclo pela capacidade do time: o que cabe, o que fica de fora e por quê. Só aplica (ciclo e a fazer juntos) com ordem explícita, e registra o plano na descrição do ciclo. | em desenvolvimento | [GOE-281](https://goekin-stg.eas-lab.com.br/goekin/issue/GOE-281) |
 
 ### Execução
 

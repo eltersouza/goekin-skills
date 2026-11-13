@@ -14,6 +14,7 @@ As outras skills da GSS se apoiam nesta. Se uma delas parecer contradizer este f
 1. Identifique a issue (por exemplo `GOE-343`). Sem issue, não há trabalho: peça o identificador ao humano ou crie uma issue em Backlog (veja "Issue nova").
 2. Leia a issue com `get_issue` e a discussão com `list_comments`. A descrição e os comentários são o pedido.
 3. Leia os status do time com `list_issue_statuses`. Os nomes mudam de time para time ("Done" no GOE, "Concluído" no PAT). Guie-se sempre pelo **tipo** do status, nunca pelo nome.
+4. Se a issue não tiver critérios de aceite nem plano, planeje antes de implementar com a skill [`goekin-plan-issue`](../goekin-plan-issue/SKILL.md). Se ela for grande demais para uma issue, use a [`goekin-breakdown`](../goekin-breakdown/SKILL.md).
 
 ## Status, pelo tipo
 
@@ -45,7 +46,7 @@ Todo comentário do agente começa com a assinatura em negrito na primeira linha
 
 O agente comenta na issue em três momentos.
 
-**1. Ao começar**, junto com a mudança para em andamento. Traga um plano curto:
+**1. Ao começar**, junto com a mudança para em andamento. Traga um plano curto (o plano completo fica na descrição, pela `goekin-plan-issue`):
 
 ```markdown
 **<Agente>**
