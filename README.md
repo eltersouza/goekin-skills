@@ -18,7 +18,7 @@ Este README é o índice do repositório. Cada skill tem uma linha, com o que el
 
 | Skill | O que faz | Status | Issue |
 |---|---|---|---|
-| [Fluxo de trabalho](skills/fluxo-de-trabalho/SKILL.md) | Fluxo padrão que todo agente segue em qualquer repositório: quem move cada status, quando comentar, como nomear branch e PR e o que fazer com trabalho novo. As outras skills se apoiam nela. | em desenvolvimento | [GOE-343](https://goekin-stg.eas-lab.com.br/goekin/issue/GOE-343) |
+| [goekin-workflow](skills/goekin-workflow/SKILL.md) | Fluxo padrão que todo agente segue em qualquer repositório: quem move cada status, quando comentar, como nomear branch e PR e o que fazer com trabalho novo. As outras skills se apoiam nela. | em desenvolvimento | [GOE-343](https://goekin-stg.eas-lab.com.br/goekin/issue/GOE-343) |
 
 ### Entrada
 

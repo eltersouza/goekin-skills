@@ -1,9 +1,9 @@
 ---
-name: goekin-fluxo-de-trabalho
+name: goekin-workflow
 description: Fluxo de trabalho padrão do GoEkin para qualquer agente que trabalhe numa issue do GoEkin, em qualquer repositório. Use sempre que for começar, implementar, abrir PR, travar, concluir ou cancelar uma issue do GoEkin, ou criar uma issue nova. Define quem move cada status, quando comentar, como nomear branch e PR e o que fazer com trabalho novo descoberto no caminho.
 ---
 
-# Fluxo de trabalho do GoEkin
+# goekin-workflow: fluxo de trabalho do GoEkin
 
 Todo agente segue este fluxo em qualquer repositório e em qualquer time do GoEkin, para que o trabalho seja igual em todo lugar e fique registrado no GoEkin, a fonte da verdade.
 
