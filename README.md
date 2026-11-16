@@ -61,7 +61,7 @@ Este README é o índice do repositório. Cada skill tem uma linha, com o que el
 
 ## Princípios que valem para todas as skills
 
-- O `goekin-workflow` vale para toda skill, sempre.
+- O `goekin-workflow` vale para toda skill, sempre. Na primeira vez em um repositório, ele pergunta se deve registrar uma regra para os agentes usarem o GoEkin como gestor único ou principal do projeto.
 - Issue nova sempre entra em Backlog, e as skills de entrada perguntam time, projeto, milestone e contexto antes de criar.
 - Skills de execução movem a issue para em andamento ao começar.
 - Skills de QA e revisão mandam o resultado para revisão (In Review), nunca para concluída.

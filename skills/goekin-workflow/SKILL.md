@@ -21,6 +21,34 @@ As outras skills da GSS se apoiam nesta. Se uma delas parecer contradizer este f
 
 Detalhes em "Status, pelo tipo", "Issue nova" e "Comentários" abaixo.
 
+## Regra do projeto: o GoEkin como gestor
+
+Na primeira vez que trabalhar num repositório, procure no `AGENTS.md`, no `CLAUDE.md` ou em arquivo equivalente uma regra que diga como os agentes usam o GoEkin. Se **já existe**, siga-a e não pergunte de novo.
+
+Se **não existe**, pergunte ao humano, uma vez, antes de começar:
+
+> Quer criar uma regra para os agentes deste projeto usarem o GoEkin como gestor do projeto? Posso registrar de dois jeitos:
+> 1. **Único gestor:** todo trabalho nasce, anda e termina numa issue do GoEkin. Sem issue, sem trabalho. Nada de lista de tarefas, planilha ou arquivo de TODO paralelos.
+> 2. **Gestor principal:** o GoEkin é a fonte da verdade, e outras ferramentas podem existir, mas o agente sempre registra e atualiza a issue.
+> 3. **Nenhuma regra por enquanto.**
+
+Com a resposta:
+
+- **1 ou 2:** com o ok do humano, escreva a regra no `AGENTS.md` (ou no `CLAUDE.md`, se for o que o projeto usa), numa seção `## GoEkin`, com o time e o prefixo das issues (por exemplo `GOE`) e o modelo abaixo. Não altere o resto do arquivo. A mudança segue o fluxo normal do repositório (branch e PR, ou o que a regra do projeto mandar).
+- **3:** siga sem regra, e não pergunte de novo na mesma conversa.
+
+```markdown
+## GoEkin
+
+O GoEkin (time <TIME>, issues <PREFIXO>-N) é o <único | principal> gestor deste projeto.
+
+- Todo trabalho parte de uma issue do GoEkin. Sem issue, o agente cria uma em Backlog e pede ao humano que a mova para a fazer.
+- Os agentes seguem a skill `goekin-workflow`: status, comentários, branch `<prefixo>-N-resumo` e PR `<PREFIXO>-N: resumo`.
+- <Único: não use outra lista de tarefas. | Principal: outras ferramentas não substituem o registro no GoEkin.>
+```
+
+O humano pode pedir para mudar ou tirar a regra a qualquer momento.
+
 ## Antes de começar
 
 1. Identifique a issue (por exemplo `GOE-343`). Sem issue, não há trabalho: peça o identificador ao humano ou crie uma issue em Backlog (veja "Issue nova").
@@ -141,6 +169,7 @@ Pela API REST vale o mesmo fluxo. O MCP é só outro canal da API.
 
 ## Checklist rápido
 
+- [ ] O projeto tem a regra do GoEkin como gestor? Se não, perguntei uma vez ao humano.
 - [ ] Li a issue, os comentários e os status do time.
 - [ ] A issue está em a fazer, ou um humano mandou trabalhar nela.
 - [ ] Movi para em andamento e comentei o plano.
