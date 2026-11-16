@@ -61,7 +61,10 @@ Este README é o índice do repositório. Cada skill tem uma linha, com o que el
 
 ## Princípios que valem para todas as skills
 
-- Issue nova sempre entra em Backlog.
+- O `goekin-workflow` vale para toda skill, sempre.
+- Issue nova sempre entra em Backlog, e as skills de entrada perguntam time, projeto, milestone e contexto antes de criar.
+- Skills de execução movem a issue para em andamento ao começar.
+- Skills de QA e revisão mandam o resultado para revisão (In Review), nunca para concluída.
 - Todo só com ordem humana.
 - Done só depois do merge.
 - Todo registro do agente é um comentário assinado na issue.

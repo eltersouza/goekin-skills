@@ -9,6 +9,18 @@ Todo agente segue este fluxo em qualquer repositório e em qualquer time do GoEk
 
 As outras skills da GSS se apoiam nesta. Se uma delas parecer contradizer este fluxo, este fluxo vale.
 
+## O fluxo vale para toda skill
+
+**Toda skill da GSS respeita este fluxo, sempre.** Nenhuma skill, nem a instrução de um prompt, autoriza o agente a pular uma regra daqui. Em especial:
+
+| Tipo de skill | Regra obrigatória |
+|---|---|
+| **Entrada** (intake, especificação por conversa, triagem de erros e qualquer skill que crie issues a partir de algo de fora) | Toda issue criada entra em **Backlog**. Antes de criar, a skill **pergunta** o contexto para pôr a issue no lugar certo: time, projeto, milestone, épico pai, labels e prioridade. |
+| **Execução** (implementar, handoff e qualquer skill que faça o trabalho da issue) | Ao começar, a issue vai **sempre** para **em andamento**, com o comentário do plano. |
+| **QA e revisão** (revisão de PR, QA e veredito) | O resultado vai **sempre** para **revisão** (In Review), seja aprovado, seja reprovado. Concluir continua sendo só com ordem humana. |
+
+Detalhes em "Status, pelo tipo", "Issue nova" e "Comentários" abaixo.
+
 ## Antes de começar
 
 1. Identifique a issue (por exemplo `GOE-343`). Sem issue, não há trabalho: peça o identificador ao humano ou crie uma issue em Backlog (veja "Issue nova").
@@ -33,6 +45,9 @@ Em andamento e revisão têm o mesmo tipo (`started`). Para escolher entre eles:
 - **Revisão** é o status `started` cujo nome fala em revisão ("In Review", "Em revisão"). Se o time não tiver um, a issue fica em andamento e o comentário do PR registra a revisão.
 
 ### Regras das transições
+
+- **Skill de execução move sempre para em andamento** quando começa, e comenta o plano. Se a issue estiver em Backlog, não comece: peça ao humano que a mova para a fazer.
+- **Skill de QA ou revisão move sempre para revisão** quando termina, com o veredito num comentário assinado. Reprovou? Também revisão: o comentário diz o que falta, e quem decide o próximo passo é o humano. Nunca concluir.
 
 - **Issue nova sempre entra em Backlog.** Nunca crie uma issue direto em a fazer, em andamento ou em ciclo.
 - **Só um humano decide fazer.** O agente não move uma issue de Backlog para a fazer. Se pedirem para trabalhar numa issue que está em Backlog, peça ao humano que a mova, ou que mande você movê-la.
@@ -94,11 +109,18 @@ Se aparecer um bug, uma melhoria ou qualquer trabalho fora do escopo da issue at
 
 ## Issue nova
 
-Ao criar uma issue (por trabalho descoberto ou a pedido do humano):
+Vale para toda criação de issue: skill de entrada, trabalho descoberto no caminho ou pedido do humano.
 
-- Status em Backlog, sem ciclo.
+- **Sempre em Backlog**, sem ciclo, sem exceção.
+- **Pergunte o contexto antes de criar.** Não adivinhe o lugar da issue. Confirme com o humano, e só pergunte o que ainda não está claro pelo pedido:
+  - **Time** (quando houver mais de um).
+  - **Projeto** e **milestone**: liste os projetos e milestones existentes (`list_projects`, `list_milestones`) e ofereça as opções.
+  - **Épico pai**, se a issue for parte de algo maior.
+  - **Labels** do time e **prioridade**, como sugestões.
+  - **Contexto do pedido**: quem pediu, de onde veio (e-mail, reunião, erro) e o que já se sabe.
+- Se ninguém puder responder (execução sem ninguém olhando), crie em Backlog, sem projeto nem milestone, e diga no comentário o que ficou por definir. Não invente projeto nem milestone.
 - Título que diga o que fazer.
-- Descrição com o objetivo e os critérios de aceite, quando houver.
+- Descrição com o objetivo e os critérios de aceite, quando houver, e o contexto do pedido.
 - Relacione com a issue de origem, quando houver.
 
 ## Segurança

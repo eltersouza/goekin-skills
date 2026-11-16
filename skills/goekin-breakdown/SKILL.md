@@ -31,6 +31,17 @@ Ela segue a [`goekin-workflow`](../goekin-workflow/SKILL.md). O ponto central é
 - O spec, se houver (na descrição, num anexo ou num doc citado), e as datas alvo.
 - O código, se a quebra depender de como o sistema está organizado.
 
+### Antes de propor: perguntar o contexto
+
+Esta é uma skill de entrada: ela cria issues, então segue a regra de [`goekin-workflow`](../goekin-workflow/SKILL.md) para issue nova. Antes de montar a proposta, confirme com o humano o que ainda não estiver claro:
+
+- **Time** das issues.
+- **Projeto** e **milestones**: mostre os que existem (`list_projects`, `list_milestones`) e pergunte se usa algum deles ou se cria novos.
+- **Épico pai**, labels do time e prioridade.
+- **Datas alvo** e o que já foi decidido sobre o escopo.
+
+Sem resposta, não invente: crie em Backlog sem projeto nem milestone e diga isso no comentário.
+
 ### 2. Montar a proposta
 
 - **Tamanho:** cada issue entre 1 e 5 pontos. Nem uma hora de trabalho, nem duas semanas. Uma issue de 8 é aceitável se não der para dividir de um jeito que faça sentido. Acima disso, divida.
