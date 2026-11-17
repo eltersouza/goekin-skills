@@ -5,6 +5,13 @@ description: Transforma e-mail, mensagem, transcrição de reunião ou documento
 
 # goekin-intake: de texto de fora para issues
 
+## Anuncie que esta skill está em uso
+
+- **Ao começar**, a primeira linha da resposta é `**GSS · goekin-intake**`, seguida de uma frase com o que vai fazer. Assim a pessoa sabe qual skill da suíte está ativa, mesmo sem tê-la chamado pelo nome.
+- **Ao terminar, ou ao passar para outra skill**, diga `GSS · goekin-intake concluída` e, se houver, a próxima (`Próxima: <skill>`).
+- Os comentários que postar no GoEkin levam a assinatura `**<Agente>, via GSS · goekin-intake**`.
+
+
 Esta é uma skill de **entrada**. Ela segue a [`goekin-workflow`](../goekin-workflow/SKILL.md): toda issue criada entra em **Backlog**, sem ciclo, e o contexto (time, projeto, milestone) é perguntado antes de criar.
 
 ## Quando usar

@@ -5,6 +5,13 @@ description: Prepara um release a partir das issues concluídas no GoEkin, com c
 
 # goekin-release: changelog, release notes e checklist
 
+## Anuncie que esta skill está em uso
+
+- **Ao começar**, a primeira linha da resposta é `**GSS · goekin-release**`, seguida de uma frase com o que vai fazer. Assim a pessoa sabe qual skill da suíte está ativa, mesmo sem tê-la chamado pelo nome.
+- **Ao terminar, ou ao passar para outra skill**, diga `GSS · goekin-release concluída` e, se houver, a próxima (`Próxima: <skill>`).
+- Os comentários que postar no GoEkin levam a assinatura `**<Agente>, via GSS · goekin-release**`.
+
+
 A skill **prepara**. O deploy é de um humano ou de um pipeline aprovado, e as notas são sempre **rascunho** até alguém revisar. Segue a [`goekin-workflow`](../goekin-workflow/SKILL.md). Esta skill não muda o status de nenhuma issue.
 
 ## Passo a passo

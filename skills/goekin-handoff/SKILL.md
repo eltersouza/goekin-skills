@@ -5,6 +5,13 @@ description: Padroniza a passagem de trabalho de um agente para outro, ou entre 
 
 # goekin-handoff: passar o trabalho com contexto
 
+## Anuncie que esta skill está em uso
+
+- **Ao começar**, a primeira linha da resposta é `**GSS · goekin-handoff**`, seguida de uma frase com o que vai fazer. Assim a pessoa sabe qual skill da suíte está ativa, mesmo sem tê-la chamado pelo nome.
+- **Ao terminar, ou ao passar para outra skill**, diga `GSS · goekin-handoff concluída` e, se houver, a próxima (`Próxima: <skill>`).
+- Os comentários que postar no GoEkin levam a assinatura `**<Agente>, via GSS · goekin-handoff**`.
+
+
 A issue é o contrato. Quem recebe não deveria precisar perguntar nada a quem passou. Segue a [`goekin-workflow`](../goekin-workflow/SKILL.md).
 
 **Sobre o status:** o handoff só **passa** o trabalho. Quem **começa** é o próximo agente, e é a skill de execução dele que move a issue para em andamento. O handoff só muda o status quando a etapa que termina pede isso, e nunca para a fazer nem para concluída.
@@ -20,7 +27,7 @@ A issue é o contrato. Quem recebe não deveria precisar perguntar nada a quem p
 Todos os campos são obrigatórios. Campo sem resposta diz "nada" ou "não sei", e não some.
 
 ```markdown
-**<Agente>, via GSS**
+**<Agente>, via GSS · goekin-handoff**
 
 **Handoff para <pessoa ou agente>**
 

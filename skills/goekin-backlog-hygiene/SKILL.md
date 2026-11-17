@@ -5,6 +5,13 @@ description: Encontra e propõe a limpeza do que polui o board do GoEkin, como d
 
 # goekin-backlog-hygiene: limpar o board
 
+## Anuncie que esta skill está em uso
+
+- **Ao começar**, a primeira linha da resposta é `**GSS · goekin-backlog-hygiene**`, seguida de uma frase com o que vai fazer. Assim a pessoa sabe qual skill da suíte está ativa, mesmo sem tê-la chamado pelo nome.
+- **Ao terminar, ou ao passar para outra skill**, diga `GSS · goekin-backlog-hygiene concluída` e, se houver, a próxima (`Próxima: <skill>`).
+- Os comentários que postar no GoEkin levam a assinatura `**<Agente>, via GSS · goekin-backlog-hygiene**`.
+
+
 A skill **acha e propõe**. Só aplica o que o humano aprovar no relatório. Segue a [`goekin-workflow`](../goekin-workflow/SKILL.md). Nada se apaga no GoEkin: o fim da linha é arquivar, que é reversível.
 
 ## Passo a passo

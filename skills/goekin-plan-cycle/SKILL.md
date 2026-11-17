@@ -5,6 +5,13 @@ description: Planeja o próximo ciclo (sprint) de um time do GoEkin pela capacid
 
 # goekin-plan-cycle: planejar o ciclo pela capacidade
 
+## Anuncie que esta skill está em uso
+
+- **Ao começar**, a primeira linha da resposta é `**GSS · goekin-plan-cycle**`, seguida de uma frase com o que vai fazer. Assim a pessoa sabe qual skill da suíte está ativa, mesmo sem tê-la chamado pelo nome.
+- **Ao terminar, ou ao passar para outra skill**, diga `GSS · goekin-plan-cycle concluída` e, se houver, a próxima (`Próxima: <skill>`).
+- Os comentários que postar no GoEkin levam a assinatura `**<Agente>, via GSS · goekin-plan-cycle**`.
+
+
 Esta skill propõe o conteúdo do próximo ciclo a partir do Backlog e da capacidade do time. **A decisão é do humano.** A skill propõe, e só aplica com ordem explícita, porque aplicar significa mover issues para a fazer, e na [`goekin-workflow`](../goekin-workflow/SKILL.md) só um humano decide fazer.
 
 ## Quando usar

@@ -5,6 +5,13 @@ description: Conduz uma entrevista guiada com quem pediu uma funcionalidade até
 
 # goekin-spec: especificar por conversa
 
+## Anuncie que esta skill está em uso
+
+- **Ao começar**, a primeira linha da resposta é `**GSS · goekin-spec**`, seguida de uma frase com o que vai fazer. Assim a pessoa sabe qual skill da suíte está ativa, mesmo sem tê-la chamado pelo nome.
+- **Ao terminar, ou ao passar para outra skill**, diga `GSS · goekin-spec concluída` e, se houver, a próxima (`Próxima: <skill>`).
+- Os comentários que postar no GoEkin levam a assinatura `**<Agente>, via GSS · goekin-spec**`.
+
+
 Esta é uma skill de **entrada**. Diferente da [`goekin-intake`](../goekin-intake/SKILL.md), que converte um texto pronto, aqui você **pergunta** até tirar as ambiguidades. Segue a [`goekin-workflow`](../goekin-workflow/SKILL.md): a issue nasce em **Backlog** e o contexto (time, projeto, milestone) é perguntado antes de criar.
 
 ## Princípios

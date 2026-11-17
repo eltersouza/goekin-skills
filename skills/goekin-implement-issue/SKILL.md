@@ -5,6 +5,13 @@ description: Leva uma issue planejada do GoEkin até um PR aberto. Cria a branch
 
 # goekin-implement-issue: da issue ao PR
 
+## Anuncie que esta skill está em uso
+
+- **Ao começar**, a primeira linha da resposta é `**GSS · goekin-implement-issue**`, seguida de uma frase com o que vai fazer. Assim a pessoa sabe qual skill da suíte está ativa, mesmo sem tê-la chamado pelo nome.
+- **Ao terminar, ou ao passar para outra skill**, diga `GSS · goekin-implement-issue concluída` e, se houver, a próxima (`Próxima: <skill>`).
+- Os comentários que postar no GoEkin levam a assinatura `**<Agente>, via GSS · goekin-implement-issue**`.
+
+
 Esta é uma skill de **execução**. Ela segue a [`goekin-workflow`](../goekin-workflow/SKILL.md) à risca: ao começar, a issue vai **sempre** para **em andamento**, com o comentário do plano; ao abrir o PR, vai para **revisão**. O GoEkin é a fonte da verdade do andamento.
 
 ## Antes de começar

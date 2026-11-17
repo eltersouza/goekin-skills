@@ -5,6 +5,13 @@ description: Planeja a implementação de uma issue do GoEkin. Transforma uma is
 
 # goekin-plan-issue: planejar a implementação de uma issue
 
+## Anuncie que esta skill está em uso
+
+- **Ao começar**, a primeira linha da resposta é `**GSS · goekin-plan-issue**`, seguida de uma frase com o que vai fazer. Assim a pessoa sabe qual skill da suíte está ativa, mesmo sem tê-la chamado pelo nome.
+- **Ao terminar, ou ao passar para outra skill**, diga `GSS · goekin-plan-issue concluída` e, se houver, a próxima (`Próxima: <skill>`).
+- Os comentários que postar no GoEkin levam a assinatura `**<Agente>, via GSS · goekin-plan-issue**`.
+
+
 Esta skill deixa uma issue pronta para implementar. O plano fica **na descrição da issue**, que é a fonte da verdade, e o pedido original do humano é preservado.
 
 Ela segue a [`goekin-workflow`](../goekin-workflow/SKILL.md): comentário assinado, nada de mover para a fazer, concluída ou cancelada sem ordem humana.
@@ -107,7 +114,7 @@ Regras da descrição:
 Comentário assinado com `save_comment`:
 
 ```markdown
-**<Agente>, via GSS**
+**<Agente>, via GSS · goekin-plan-issue**
 
 Plano escrito na descrição. Li: `<arquivo 1>`, `<arquivo 2>`, ...
 

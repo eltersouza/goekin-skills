@@ -5,6 +5,13 @@ description: Quebra um épico, projeto ou spec grande do GoEkin em milestones e 
 
 # goekin-breakdown: quebrar épico ou projeto em issues e milestones
 
+## Anuncie que esta skill está em uso
+
+- **Ao começar**, a primeira linha da resposta é `**GSS · goekin-breakdown**`, seguida de uma frase com o que vai fazer. Assim a pessoa sabe qual skill da suíte está ativa, mesmo sem tê-la chamado pelo nome.
+- **Ao terminar, ou ao passar para outra skill**, diga `GSS · goekin-breakdown concluída` e, se houver, a próxima (`Próxima: <skill>`).
+- Os comentários que postar no GoEkin levam a assinatura `**<Agente>, via GSS · goekin-breakdown**`.
+
+
 Esta skill transforma uma coisa grande no caminho até a entrega: milestones com data, issues pequenas, a ordem entre elas e o caminho crítico.
 
 Ela segue a [`goekin-workflow`](../goekin-workflow/SKILL.md). O ponto central é que **nada é criado sem o ok do humano**.
@@ -94,7 +101,7 @@ Regras da criação:
 Comentário assinado com `save_comment` no épico. Se for um projeto, comente na primeira issue do caminho crítico e diga isso ao humano:
 
 ```markdown
-**<Agente>, via GSS**
+**<Agente>, via GSS · goekin-breakdown**
 
 Quebra criada por ordem de <humano>:
 

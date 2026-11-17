@@ -5,6 +5,13 @@ description: Acompanha o ciclo (sprint) em andamento no GoEkin e avisa cedo quan
 
 # goekin-monitor-cycle: diagnóstico do ciclo
 
+## Anuncie que esta skill está em uso
+
+- **Ao começar**, a primeira linha da resposta é `**GSS · goekin-monitor-cycle**`, seguida de uma frase com o que vai fazer. Assim a pessoa sabe qual skill da suíte está ativa, mesmo sem tê-la chamado pelo nome.
+- **Ao terminar, ou ao passar para outra skill**, diga `GSS · goekin-monitor-cycle concluída` e, se houver, a próxima (`Próxima: <skill>`).
+- Os comentários que postar no GoEkin levam a assinatura `**<Agente>, via GSS · goekin-monitor-cycle**`.
+
+
 A skill **lê e avisa**. Mudanças de escopo e o encerramento do ciclo são do humano. Segue a [`goekin-workflow`](../goekin-workflow/SKILL.md). Para times sem ciclo (Kanban), não se aplica.
 
 ## Passo a passo

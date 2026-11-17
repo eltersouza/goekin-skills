@@ -5,6 +5,13 @@ description: Conduz a retrospectiva de um ciclo do GoEkin com dados (planejado c
 
 # goekin-retro: retrospectiva com dados
 
+## Anuncie que esta skill está em uso
+
+- **Ao começar**, a primeira linha da resposta é `**GSS · goekin-retro**`, seguida de uma frase com o que vai fazer. Assim a pessoa sabe qual skill da suíte está ativa, mesmo sem tê-la chamado pelo nome.
+- **Ao terminar, ou ao passar para outra skill**, diga `GSS · goekin-retro concluída` e, se houver, a próxima (`Próxima: <skill>`).
+- Os comentários que postar no GoEkin levam a assinatura `**<Agente>, via GSS · goekin-retro**`.
+
+
 A retro olha o **processo**, não as pessoas. Segue a [`goekin-workflow`](../goekin-workflow/SKILL.md). As ações viram issues em **Backlog**, depois do ok do humano.
 
 ## Passo a passo

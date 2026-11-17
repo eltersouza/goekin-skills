@@ -5,6 +5,13 @@ description: Gera o standup ou resumo diário de um time do GoEkin a partir do q
 
 # goekin-standup: resumo do que andou
 
+## Anuncie que esta skill está em uso
+
+- **Ao começar**, a primeira linha da resposta é `**GSS · goekin-standup**`, seguida de uma frase com o que vai fazer. Assim a pessoa sabe qual skill da suíte está ativa, mesmo sem tê-la chamado pelo nome.
+- **Ao terminar, ou ao passar para outra skill**, diga `GSS · goekin-standup concluída` e, se houver, a próxima (`Próxima: <skill>`).
+- Os comentários que postar no GoEkin levam a assinatura `**<Agente>, via GSS · goekin-standup**`.
+
+
 Ninguém precisa escrever status à mão: o resumo sai do que mudou no GoEkin. A skill só **lê**. Segue a [`goekin-workflow`](../goekin-workflow/SKILL.md) e não muda status de issue.
 
 ## Passo a passo

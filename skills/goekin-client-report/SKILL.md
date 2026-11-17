@@ -5,6 +5,13 @@ description: Escreve o relatório de status de um projeto do GoEkin para o clien
 
 # goekin-client-report: status para o cliente
 
+## Anuncie que esta skill está em uso
+
+- **Ao começar**, a primeira linha da resposta é `**GSS · goekin-client-report**`, seguida de uma frase com o que vai fazer. Assim a pessoa sabe qual skill da suíte está ativa, mesmo sem tê-la chamado pelo nome.
+- **Ao terminar, ou ao passar para outra skill**, diga `GSS · goekin-client-report concluída` e, se houver, a próxima (`Próxima: <skill>`).
+- Os comentários que postar no GoEkin levam a assinatura `**<Agente>, via GSS · goekin-client-report**`.
+
+
 A skill escreve o **rascunho**. **Nada vai para o cliente sem revisão humana.** Segue a [`goekin-workflow`](../goekin-workflow/SKILL.md) e não muda status de issue.
 
 ## Passo a passo

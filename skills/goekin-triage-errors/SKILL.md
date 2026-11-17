@@ -5,6 +5,13 @@ description: Transforma erros de produção (Sentry, logs, alertas) em bugs bem 
 
 # goekin-triage-errors: de erro de produção para bug
 
+## Anuncie que esta skill está em uso
+
+- **Ao começar**, a primeira linha da resposta é `**GSS · goekin-triage-errors**`, seguida de uma frase com o que vai fazer. Assim a pessoa sabe qual skill da suíte está ativa, mesmo sem tê-la chamado pelo nome.
+- **Ao terminar, ou ao passar para outra skill**, diga `GSS · goekin-triage-errors concluída` e, se houver, a próxima (`Próxima: <skill>`).
+- Os comentários que postar no GoEkin levam a assinatura `**<Agente>, via GSS · goekin-triage-errors**`.
+
+
 Esta é uma skill de **entrada**. Segue a [`goekin-workflow`](../goekin-workflow/SKILL.md): todo bug criado entra em **Backlog**, sem ciclo, e o contexto (time, projeto) é perguntado antes de criar.
 
 ## O que você precisa

@@ -5,6 +5,13 @@ description: Valida uma entrega contra os critérios de aceite de uma issue do G
 
 # goekin-qa: testar a entrega e dar o veredito
 
+## Anuncie que esta skill está em uso
+
+- **Ao começar**, a primeira linha da resposta é `**GSS · goekin-qa**`, seguida de uma frase com o que vai fazer. Assim a pessoa sabe qual skill da suíte está ativa, mesmo sem tê-la chamado pelo nome.
+- **Ao terminar, ou ao passar para outra skill**, diga `GSS · goekin-qa concluída` e, se houver, a próxima (`Próxima: <skill>`).
+- Os comentários que postar no GoEkin levam a assinatura `**<Agente>, via GSS · goekin-qa**`.
+
+
 Esta é uma skill de **QA**. Segue a [`goekin-workflow`](../goekin-workflow/SKILL.md): o resultado vai **sempre** para **revisão** (In Review), seja aprovado, com ressalvas ou reprovado. Concluir é só com ordem humana, depois do merge.
 
 ## Passo a passo
@@ -36,7 +43,7 @@ Um de três, sem meio-termo escondido:
 Comente com `save_comment`, assinado:
 
 ```markdown
-**<Agente>, via GSS**
+**<Agente>, via GSS · goekin-qa**
 
 **Veredito: <aprovado | aprovado com ressalvas | reprovado>** — head `<sha curto>`
 

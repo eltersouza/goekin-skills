@@ -5,6 +5,13 @@ description: Refina e prioriza o Backlog de um time do GoEkin. Classifica cada i
 
 # goekin-refine-backlog: refinar e priorizar
 
+## Anuncie que esta skill está em uso
+
+- **Ao começar**, a primeira linha da resposta é `**GSS · goekin-refine-backlog**`, seguida de uma frase com o que vai fazer. Assim a pessoa sabe qual skill da suíte está ativa, mesmo sem tê-la chamado pelo nome.
+- **Ao terminar, ou ao passar para outra skill**, diga `GSS · goekin-refine-backlog concluída` e, se houver, a próxima (`Próxima: <skill>`).
+- Os comentários que postar no GoEkin levam a assinatura `**<Agente>, via GSS · goekin-refine-backlog**`.
+
+
 Deixa o topo do Backlog pronto para o planejamento. **A skill propõe e o humano aprova.** Segue a [`goekin-workflow`](../goekin-workflow/SKILL.md): nenhuma issue sai do Backlog por aqui sem o comando explícito do humano para movê-la para a fazer.
 
 ## Passo a passo

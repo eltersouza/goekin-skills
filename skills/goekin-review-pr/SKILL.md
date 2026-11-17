@@ -5,6 +5,13 @@ description: Revisa um PR à luz da issue do GoEkin, conferindo critério de ace
 
 # goekin-review-pr: revisar o PR contra a issue
 
+## Anuncie que esta skill está em uso
+
+- **Ao começar**, a primeira linha da resposta é `**GSS · goekin-review-pr**`, seguida de uma frase com o que vai fazer. Assim a pessoa sabe qual skill da suíte está ativa, mesmo sem tê-la chamado pelo nome.
+- **Ao terminar, ou ao passar para outra skill**, diga `GSS · goekin-review-pr concluída` e, se houver, a próxima (`Próxima: <skill>`).
+- Os comentários que postar no GoEkin levam a assinatura `**<Agente>, via GSS · goekin-review-pr**`.
+
+
 Esta é uma skill de **revisão**. Segue a [`goekin-workflow`](../goekin-workflow/SKILL.md): o resultado vai **sempre** para **revisão** (In Review), seja favorável ou não. O resultado é uma **recomendação**. Quem decide o merge é o humano.
 
 Esta skill **lê** o código. Quem **executa** o produto e a suíte é a [`goekin-qa`](../goekin-qa/SKILL.md). Se a pessoa pedir as duas, rode as duas.

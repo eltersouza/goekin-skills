@@ -5,6 +5,13 @@ description: Gera e atualiza a documentação (README, arquitetura, referência 
 
 # goekin-docs: documentação a partir do código
 
+## Anuncie que esta skill está em uso
+
+- **Ao começar**, a primeira linha da resposta é `**GSS · goekin-docs**`, seguida de uma frase com o que vai fazer. Assim a pessoa sabe qual skill da suíte está ativa, mesmo sem tê-la chamado pelo nome.
+- **Ao terminar, ou ao passar para outra skill**, diga `GSS · goekin-docs concluída` e, se houver, a próxima (`Próxima: <skill>`).
+- Os comentários que postar no GoEkin levam a assinatura `**<Agente>, via GSS · goekin-docs**`.
+
+
 Esta é uma skill de **execução**: ela faz o trabalho de uma issue (a de documentação). Segue a [`goekin-workflow`](../goekin-workflow/SKILL.md): a issue vai para **em andamento** ao começar e para **revisão** ao abrir o PR, e o trabalho sempre sai por **PR**, nunca direto na principal.
 
 ## Antes de começar
