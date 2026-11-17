@@ -107,7 +107,7 @@ Regras da descrição:
 Comentário assinado com `save_comment`:
 
 ```markdown
-**<Agente>**
+**<Agente>, via GSS**
 
 Plano escrito na descrição. Li: `<arquivo 1>`, `<arquivo 2>`, ...
 

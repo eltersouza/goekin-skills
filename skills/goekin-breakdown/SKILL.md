@@ -94,7 +94,7 @@ Regras da criação:
 Comentário assinado com `save_comment` no épico. Se for um projeto, comente na primeira issue do caminho crítico e diga isso ao humano:
 
 ```markdown
-**<Agente>**
+**<Agente>, via GSS**
 
 Quebra criada por ordem de <humano>:
 

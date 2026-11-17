@@ -36,7 +36,7 @@ Um de três, sem meio-termo escondido:
 Comente com `save_comment`, assinado:
 
 ```markdown
-**<Agente>**
+**<Agente>, via GSS**
 
 **Veredito: <aprovado | aprovado com ressalvas | reprovado>** — head `<sha curto>`
 

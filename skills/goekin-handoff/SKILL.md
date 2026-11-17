@@ -20,7 +20,7 @@ A issue é o contrato. Quem recebe não deveria precisar perguntar nada a quem p
 Todos os campos são obrigatórios. Campo sem resposta diz "nada" ou "não sei", e não some.
 
 ```markdown
-**<Agente>**
+**<Agente>, via GSS**
 
 **Handoff para <pessoa ou agente>**
 

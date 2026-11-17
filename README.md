@@ -67,7 +67,7 @@ Este README é o índice do repositório. Cada skill tem uma linha, com o que el
 - Skills de QA e revisão mandam o resultado para revisão (In Review), nunca para concluída.
 - A fazer (Todo) só por um humano, à mão, ou por um agente com comando explícito dele.
 - Done só depois do merge.
-- Todo registro do agente é um comentário assinado na issue.
+- Todo registro do agente é um comentário assinado na issue, com a marca `via GSS`. A mesma marca vai na descrição dos PRs e nos commits (`Via: GSS`), e um projeto pode desligá-la no `AGENTS.md` ou no `CLAUDE.md`.
 - Nada vai para o cliente sem revisão humana.
 - Nunca expor chaves: o agente lê a chave da variável `GOEKIN_API_KEY` e nunca a escreve em arquivo, log ou mensagem.
 
